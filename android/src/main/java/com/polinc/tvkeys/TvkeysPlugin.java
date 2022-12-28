@@ -29,6 +29,16 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
+import androidx.annotation.NonNull;
+
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.plugin.common.EventChannel;
+import io.flutter.plugin.common.MethodCall;
+import io.flutter.plugin.common.MethodChannel;
+import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
+import io.flutter.plugin.common.MethodChannel.Result;
+
+
 
 /** TvkeysPlugin */
 public class TvkeysPlugin implements FlutterPlugin, MethodCallHandler {
@@ -45,7 +55,7 @@ public class TvkeysPlugin implements FlutterPlugin, MethodCallHandler {
     channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "tv_keys");
     channel.setMethodCallHandler(this);
 	
-	   mRemoteBtnEventChannel = new EventChannel(flutterEngine.getDartExecutor(), "tv_keys_input");
+	   mRemoteBtnEventChannel = new EventChannel(flutterPluginBinding.getBinaryMessenger(), "tv_keys_input");
        tvKeysEventProcessor= new TVKeysEventProcessor();
         mRemoteBtnEventChannel.setStreamHandler(tvKeysEventProcessor);
   }
