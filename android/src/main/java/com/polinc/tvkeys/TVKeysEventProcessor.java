@@ -7,6 +7,15 @@ import java.util.*;
 
 public class TVKeysEventProcessor implements  EventChannel.StreamHandler{
 
+    private static TVKeysEventProcessor INSTANCE;
+    public static TVKeysEventProcessor getInstance() {
+        if(INSTANCE == null) {
+            INSTANCE = new TVKeysEventProcessor();
+        }
+        return INSTANCE;
+    }
+
+
     EventChannel.EventSink mEventSink = null;
 
     public void setEventNotifier(EventChannel.EventSink sink) {
