@@ -7,7 +7,7 @@ import java.util.*;
 
 public class TVKeysEventProcessor implements  EventChannel.StreamHandler{
 
-    private static TVKeysEventProcessor INSTANCE;
+    public static TVKeysEventProcessor INSTANCE;
     public static TVKeysEventProcessor getInstance() {
         if(INSTANCE == null) {
             INSTANCE = new TVKeysEventProcessor();
