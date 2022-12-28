@@ -10,33 +10,21 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.embedding.android.FlutterActivity;
 import android.app.UiModeManager;
 import android.content.ComponentName;
-
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
-import io.flutter.plugins.GeneratedPluginRegistrant;
-import io.flutter.plugin.common.MethodCall;
-import io.flutter.plugin.common.MethodChannel;
-import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
-import io.flutter.plugin.common.MethodChannel.Result;
 import android.content.ContextWrapper;
 import androidx.annotation.NonNull;
-
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import androidx.annotation.NonNull;
-
-import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.EventChannel;
-import io.flutter.plugin.common.MethodCall;
-import io.flutter.plugin.common.MethodChannel;
-import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
-import io.flutter.plugin.common.MethodChannel.Result;
+
 
 
 
